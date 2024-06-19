@@ -18,6 +18,7 @@
 		5C96BAF12C226A8D007284F1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C96BAF02C226A8C007284F1 /* SecondViewController.swift */; };
 		5C96BAF32C22B745007284F1 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C96BAF22C22B745007284F1 /* logo1.png */; };
 		5C96BAF52C22C477007284F1 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C96BAF42C22C477007284F1 /* image1.png */; };
+		5C96BAF92C22F370007284F1 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C96BAF82C22F370007284F1 /* GoogleService-Info-2.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5C96BAF02C226A8C007284F1 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "../../../../Downloads/BMI_Calculator-main/BMI_Calculator/Controllers/SecondViewController.swift"; sourceTree = "<group>"; };
 		5C96BAF22C22B745007284F1 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo1.png; path = ../../../../Downloads/logo1.png; sourceTree = "<group>"; };
 		5C96BAF42C22C477007284F1 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image1.png; path = ../../../../Downloads/image1.png; sourceTree = "<group>"; };
+		5C96BAF82C22F370007284F1 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-2.plist"; path = "../../../../Downloads/GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				5C96BAF42C22C477007284F1 /* image1.png */,
 				5C96BADE2C222623007284F1 /* Assets.xcassets */,
 				5C96BAE02C222623007284F1 /* LaunchScreen.storyboard */,
+				5C96BAF82C22F370007284F1 /* GoogleService-Info-2.plist */,
 				5C96BAE32C222624007284F1 /* Info.plist */,
 			);
 			path = RealFinalPJ;
@@ -141,6 +144,7 @@
 			files = (
 				5C96BAE22C222623007284F1 /* LaunchScreen.storyboard in Resources */,
 				5C96BAF52C22C477007284F1 /* image1.png in Resources */,
+				5C96BAF92C22F370007284F1 /* GoogleService-Info-2.plist in Resources */,
 				5C96BADF2C222623007284F1 /* Assets.xcassets in Resources */,
 				5C96BAF32C22B745007284F1 /* logo1.png in Resources */,
 				5C96BAEB2C226A04007284F1 /* Main.storyboard in Resources */,

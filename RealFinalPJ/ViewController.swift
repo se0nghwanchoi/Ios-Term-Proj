@@ -15,8 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultButton: UIButton!
     
     
+    
+    
     // BMI 계산기 관리자 인스턴스
     var bmiManager = BMICalculatorManager()
+    
+    
         
     // BMI 데이터를 저장할 변수
     var bmi: Double?
@@ -30,14 +34,23 @@ class ViewController: UIViewController {
         // 초기 UI 설정
         SettingUI()
         }
-        
+    
+     
+     func showAlert(message: String) {
+         let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
+         alert.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+         present(alert, animated: true, completion: nil)
+     }
+     
+    
+  
     // UI를 초기 설정하는 함수
     func SettingUI() {
         heightInput.delegate = self
         weightInput.delegate = self
             
-        
-        firstLabel.text = "키와 체중을 입력하세요"
+        firstLabel.textColor = .green
+        firstLabel.text = "키와 체중을 입력해주세요"
         resultButton.clipsToBounds = true
         resultButton.layer.cornerRadius = 5
         resultButton.setTitle("계산하기", for: .normal)
@@ -46,6 +59,12 @@ class ViewController: UIViewController {
         }
     
     @IBAction func resultButtonTapped(_ sender: UIButton) {
+        guard let heightText = heightInput.text, let weightText = weightInput.text,
+              let height = Double(heightText), let weight = Double(weightText) else {
+            showAlert(message: "키와 체중을 올바르게 입력하세요.")
+            return
+        }
+        
         if shouldPerformSegue(withIdentifier: "toResultVC", sender: self) {
                    performSegue(withIdentifier: "toResultVC", sender: self)
                }
