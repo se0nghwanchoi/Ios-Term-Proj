@@ -1,3 +1,5 @@
-xcode로 만든 bmi 계산기 입니다.
+## ios프로그래밍 기말과제
 
+
+### Bmi 계산기 
 (https://youtube.com/shorts/jwcAGSVt9Yg)
