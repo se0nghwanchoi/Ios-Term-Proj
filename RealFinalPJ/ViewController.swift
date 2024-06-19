@@ -46,7 +46,9 @@ class ViewController: UIViewController {
         }
     
     @IBAction func resultButtonTapped(_ sender: UIButton) {
-        
+        if shouldPerformSegue(withIdentifier: "toResultVC", sender: self) {
+                   performSegue(withIdentifier: "toResultVC", sender: self)
+               }
     }
     
     // segue 수행 전 입력 값을 검증하는 함수
@@ -57,7 +59,7 @@ class ViewController: UIViewController {
                 return false
             }
             firstLabel.text = "키와 체중을 입력해주세요"
-            firstLabel.textColor = .darkGray
+            firstLabel.textColor = .green
             return true
         }
         
